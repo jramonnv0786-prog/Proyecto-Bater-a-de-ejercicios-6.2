@@ -29,3 +29,21 @@ classDiagram
 
 ```
 Ejercicio 3
+```mermaid
+
+classDiagram
+    class Computadora {
+        +String modelo
+        +encender()
+    }
+    class PlacaBase {
+        +String chipset
+    }
+    class Raton {
+        +String tipoConector
+    }
+
+    Computadora *-- PlacaBase : Composición
+    Computadora o-- Raton : Agregación
+```
+

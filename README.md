@@ -47,3 +47,25 @@ classDiagram
     Computadora o-- Raton : Agregación
 ```
 
+Ejercicio 4
+
+```mermaid
+
+classDiagram
+    class CentroComercial {
+        +String nombre
+        +String direccion
+    }
+    class Tienda {
+        +String nombreTienda
+        +String rubro
+    }
+
+    CentroComercial "1" -- "1..*" Tienda : alberga
+```
+
+
+
+
+```
+

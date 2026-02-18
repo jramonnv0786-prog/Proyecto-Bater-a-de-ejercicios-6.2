@@ -1,6 +1,8 @@
-# Proyecto-Bater-a-de-ejercicios-6.2
+# Proyecto-Bateria-de-ejercicios-6.2
 Diagrama de clases
 
+
+Ejercicio 1
 ```mermaid
 classDiagram
     class Usuario {
@@ -11,15 +13,3 @@ classDiagram
         -validarEmail()
     }
 
-```mermaid
-
-classDiagram
-    class Persona {
-        +String nombre
-        +String dni
-    }
-    class Estudiante {
-        +int numeroExpediente
-        +float notaMedia
-    }
-    Persona <|-- Estudiante

@@ -63,9 +63,53 @@ classDiagram
 
     CentroComercial "1" -- "1..*" Tienda : alberga
 ```
+Ejercicio 5
 
+```mermaid
+classDiagram
+    class MetodoPago {
+        <<interface>>
+        +procesar(double importe)
+    }
+    class Tarjeta {
+        +procesar(double importe)
+    }
+    class Paypal {
+        +procesar(double importe)
+    }
+    class Carrito {
+        +pagar(MetodoPago miMetodo)
+    }
 
-
-
+    MetodoPago <|.. Tarjeta : Implementa
+    MetodoPago <|.. Paypal : Implementa
+    Carrito ..> MetodoPago : Usa (Dependencia)
 ```
+
+Ejercicio 6
+
+```mermaid
+classDiagram
+    class Recurso {
+        -int id
+        -String titulo
+        +prestar()
+        +devolver()
+    }
+    class Libro {
+        +String isbn
+    }
+    class Revista {
+        +int numeroEdicion
+    }
+    class Usuario {
+        +String nombre
+        +int numCarnet
+    }
+
+    Recurso <|-- Libro : Es un
+    Recurso <|-- Revista : Es un
+    Usuario "1" --> "0..*" Recurso : tiene prestado
+```
+
 

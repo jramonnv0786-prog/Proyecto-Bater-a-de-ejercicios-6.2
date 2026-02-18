@@ -1,7 +1,7 @@
 # Proyecto-Bater-a-de-ejercicios-6.2
 Diagrama de clases
 
-'''mermaid
+```mermaid
 classDiagram
     class Usuario {
         -String nombreUsuario

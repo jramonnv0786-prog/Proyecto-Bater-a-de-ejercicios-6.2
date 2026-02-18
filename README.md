@@ -2,9 +2,11 @@
 Diagrama de clases
 
 '''mermaid
-Elemento,Nombre,Visibilidad,Tipo de Dato
-Atributo,nombreUsuario,Privado (-),String
-Atributo,password,Privado (-),String
-Atributo,correo,Público (+),String
-Método,cambiarPassword(nueva),Público (+),void
-Método,validarEmail(),Privado (-),boolean
+classDiagram
+    class Usuario {
+        -String nombreUsuario
+        -String password
+        +String correo
+        +cambiarPassword(String nueva)
+        -validarEmail()
+    }

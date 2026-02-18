@@ -12,4 +12,20 @@ classDiagram
         +cambiarPassword(String nueva)
         -validarEmail()
     }
+````
+Ejercicio 2
+```mermaid
 
+classDiagram
+    class Persona {
+        +String nombre
+        +String dni
+    }
+    class Estudiante {
+        +int numeroExpediente
+        +float notaMedia
+    }
+    Persona <|-- Estudiante
+
+```
+Ejercicio 3
